@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 104px;
+  margin-bottom: 34px;
+  padding-left: 30px;
+
+  @media (max-width: 625px) {
+    padding-left: 10px;
+  }
+
+  &__title {
+    font-family: 'Montserrat';
+    font-size: 2.4rem;
+    line-height: 132%;
+  }
+}
+
+.btn-add {
+  background-color: #d6dbeb;
+  transition: all 200ms ease-in-out;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: darken($color: #d6dbeb, $amount: 5);
+  }
+}
